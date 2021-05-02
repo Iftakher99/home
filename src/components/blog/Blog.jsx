@@ -4,8 +4,8 @@ import bloglist from "../../editable-stuff/blog";
 import { Link } from "react-router-dom";
 const Blog = (props) => {
   return (
-    <div className="container-lg mt-5 bg-blue">
-      <h1 className="text-center">Blogs</h1>
+    <div className='container-lg mt-5 bg-blue'>
+      <h1 className='text-center'>Blogs</h1>
       {bloglist.map((value, index) => {
         return (
           <BlogCard
@@ -22,16 +22,16 @@ const Blog = (props) => {
 
 const BlogCard = ({ index, title, image, description }) => {
   return (
-    <div className="m-5">
-      <div className="">
-        <div className="row">
-          <div className="col-4 col-lg-12">
+    <div className='m-5'>
+      <div className=''>
+        <div className='row'>
+          <div className='col-4 col-lg-12'>
             {/* <img src={image} className="card-img" alt="..." /> */}
           </div>
-          <div className="col-8 col-lg-12">
-            <div className="">
-              <h1 className="">{title}</h1>
-              <p className="lead">{description}</p>
+          <div className='col-8 col-lg-12'>
+            <div className=''>
+              <h1 className=''>{title}</h1>
+              <p className='lead'>{description}</p>
               <Link to={`${process.env.PUBLIC_URL}blog/${index}`}>
                 Read more...{" "}
               </Link>

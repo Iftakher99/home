@@ -11,7 +11,7 @@ class BlogBuilder {
 
   addParagraph = (props) => {
     this.list.push(
-      <p key={this.list.length} className="lead">
+      <p key={this.list.length} className='lead'>
         {props}
       </p>
     );
@@ -21,7 +21,7 @@ class BlogBuilder {
   addHeading = (props) => {
     this.list.push(
       <Fragment key={this.list.length}>
-        <h1 className="">{props}</h1>
+        <h1 className=''>{props}</h1>
         <hr />
       </Fragment>
     );
@@ -29,7 +29,7 @@ class BlogBuilder {
   };
 
   getBlog = () => {
-    return <div className="container-lg">{this.list}</div>;
+    return <div className='container-lg'>{this.list}</div>;
   };
 }
 

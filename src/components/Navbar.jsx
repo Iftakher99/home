@@ -37,14 +37,14 @@ const Navigation = React.forwardRef((props, ref) => {
       className={` fixed-top  ${
         !isTop ? "navbar-white" : "navbar-transparent"
       }`}
-      expand="lg"
+      expand='lg'
     >
-      <Navbar.Brand className="brand" href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className='brand' href={process.env.PUBLIC_URL + "/#home"}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
+      <Navbar.Toggle aria-controls='basic-navbar-nav' className='toggler' />
+      <Navbar.Collapse id='basic-navbar-nav'>
+        <Nav className='mr-auto'>
           {/* {
             <Nav.Link className="nav-link lead">
               <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
@@ -52,23 +52,23 @@ const Navigation = React.forwardRef((props, ref) => {
           } */}
           {repos.show && (
             <Nav.Link
-              className="nav-link lead"
+              className='nav-link lead'
               href={process.env.PUBLIC_URL + "/#projects"}
             >
               Projects
             </Nav.Link>
           )}
           <Nav.Link
-            className="nav-link lead"
+            className='nav-link lead'
             href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
+            target='_blank'
+            rel='noreferrer noopener'
           >
             Resume
           </Nav.Link>
           {about.show && (
             <Nav.Link
-              className="nav-link lead"
+              className='nav-link lead'
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
               About
@@ -76,7 +76,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {skills.show && (
             <Nav.Link
-              className="nav-link lead"
+              className='nav-link lead'
               href={process.env.PUBLIC_URL + "/#skills"}
             >
               Skills

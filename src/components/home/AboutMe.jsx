@@ -20,7 +20,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   }, [link]);
 
   const handleRequest = async () => {
-    const instaLink = "https://www.instagram.com/";
+    const instaLink = "https://www.instagram.com/iftakher_mahmud";
     const instaQuery = "/?__a=1";
     try {
       const response = await axios.get(instaLink + link + instaQuery);
@@ -32,15 +32,15 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   };
 
   return (
-    <div id="aboutme" className="jumbotron jumbotron-fluid m-0">
-      <div className="container container-fluid">
-        <div className="row">
-          <div className="col-5 d-none d-lg-block align-self-center">
+    <div id='aboutme' className='jumbotron jumbotron-fluid m-0'>
+      <div className='container container-fluid'>
+        <div className='row'>
+          <div className='col-5 d-none d-lg-block align-self-center'>
             {showPic && (
               <img
-                className="border border-secondary rounded-circle"
+                className='border border-secondary rounded-circle'
                 src={profilePicUrl}
-                alt="profilepicture"
+                alt='profilepicture'
                 width={imgSize}
                 height={imgSize}
               />
@@ -48,17 +48,17 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
           </div>
 
           <div className={`col-lg-${showPic ? "7" : "12"}`}>
-            <h2 className="display-4 mb-5 text-center">{heading}</h2>
-            <p className="lead text-center">{message}</p>
+            <h2 className='display-4 mb-5 text-center'>{heading}</h2>
+            <p className='lead text-center'>{message}</p>
             {resume && (
-              <p className="lead text-center">
+              <p className='lead text-center'>
                 <a
-                  className="btn btn-outline-dark btn-lg"
+                  className='btn btn-outline-dark btn-lg'
                   href={resume}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  role="button"
-                  aria-label="Resume/CV"
+                  target='_blank'
+                  rel='noreferrer noopener'
+                  role='button'
+                  aria-label='Resume/CV'
                 >
                   Resume
                 </a>
